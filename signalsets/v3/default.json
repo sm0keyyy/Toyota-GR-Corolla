@@ -1,9 +1,9 @@
 { "commands": [
-{ "hdr": "700", "dbg": false, "cmd": {"22": "1059"}, "freq": 0.25,
+{ "hdr": "700", "dbg": true, "cmd": {"22": "1059"}, "freq": 0.25,
   "signals": [
     {"id": "GRCOROLLA_ACCEL_PEDAL", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 1.42, "add": -41, "unit": "percent" }, "name": "Accelerator Pedal"}
   ]},
-{ "hdr": "700", "dbg": false, "cmd": {"22": "1074"}, "freq": 0.25,
+{ "hdr": "700", "dbg": true, "cmd": {"22": "1074"}, "freq": 0.25,
   "signals": [
     {"id": "GRCOROLLA_ENG_OIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 1000, "mul": 10, "div": 128, "unit": "kilopascal" }, "name": "Engine Oil Pressure"}
   ]},
@@ -13,7 +13,7 @@
   ]},
 { "hdr": "700", "dbg": true, "cmd": {"22": "1F2F"}, "freq": 30,
   "signals": [
-    {"id": "GRCOROLLA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+    {"id": "GRCOROLLA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 155, "offset": -100, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
 { "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1627"}, "freq": 1,
   "signals": [
@@ -33,11 +33,11 @@
   ]},
 { "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": true, "cmd": {"22": "1005"}, "freq": 5,
   "signals": [
-    {"id": "GRCOROLLA_TP_FL",    "path": "Tires", "fmt": {           "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "GRCOROLLA_TP_FR",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "GRCOROLLA_TP_RL",    "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "GRCOROLLA_TP_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
-    {"id": "GRCOROLLA_TP_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Spare tire pressure"}
+    {"id": "GRCOROLLA_TP_FL",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "GRCOROLLA_TP_FR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
+    {"id": "GRCOROLLA_TP_RL",    "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "GRCOROLLA_TP_RR",    "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
+    {"id": "GRCOROLLA_TP_SPARE", "path": "Tires", "fmt": {"bix": 72, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Spare tire pressure"}
   ]},
 { "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "2021"}, "freq": 86400,
   "signals": [
@@ -85,7 +85,7 @@
   "signals": [
     {"id": "GRCOROLLA_COUPLING_TEMP", "path": "Drivetrain", "fmt": { "len": 16, "max": 100, "min": -20, "div": 128, "unit": "celsius" }, "name": "Coupling Temperature"}
   ]},
-{ "hdr": "7B3", "dbg": false, "cmd": {"22": "1004"}, "freq": 0.25,
+{ "hdr": "7B3", "dbg": true, "cmd": {"22": "1004"}, "freq": 0.25,
   "signals": [
     {"id": "GRCOROLLA_STEERING_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 410, "min": -410, "mul": 1.5, "sign": true, "unit": "degrees" }, "name": "Steering Angle"}
   ]},
@@ -93,7 +93,7 @@
   "signals": [
     {"id": "GRCOROLLA_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ Battery Voltage"}
   ]},
-{ "hdr": "7D0", "dbg": false, "cmd": {"21": "62"}, "freq": 1,
+{ "hdr": "7D0", "dbg": true, "cmd": {"21": "62"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_PARKING_BRAKE", "path": "Control", "name": "Parking Brake", "fmt": {"len": 8, "map": {
           "0": { "description": "", "value": "Off" },
