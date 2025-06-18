@@ -13,7 +13,7 @@
   ]},
 { "hdr": "700", "dbg": true, "cmd": {"22": "1F2F"}, "freq": 30,
   "signals": [
-    {"id": "GRCOROLLA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 155, "add": -24.516129, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+    {"id": "GRCOROLLA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 155, "add": -30.516129, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
 { "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1627"}, "freq": 1,
   "signals": [
