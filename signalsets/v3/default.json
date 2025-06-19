@@ -1,13 +1,13 @@
 { "commands": [
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1059"}, "freq": 0.25,
+{ "hdr": "700", "dbg": false, "cmd": {"22": "1059"}, "freq": 0.25,
   "signals": [
     {"id": "GRCOROLLA_ACCEL_PEDAL", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 1.42, "add": -41, "unit": "percent" }, "name": "Accelerator Pedal"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1074"}, "freq": 0.25,
+{ "hdr": "700", "dbg": false, "cmd": {"22": "1074"}, "freq": 0.25,
   "signals": [
     {"id": "GRCOROLLA_ENG_OIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 1000, "mul": 10, "div": 128, "unit": "kilopascal" }, "name": "Engine Oil Pressure"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1638"}, "freq": 1,
+{ "hdr": "700", "dbg": false, "cmd": {"22": "1638"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_ATF_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission Fluid Temperature"}
   ]},
@@ -15,7 +15,7 @@
   "signals": [
     {"id": "GRCOROLLA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 155, "add": -28.516129, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "701", "rax": "709", "dbg": true, "cmd": {"22": "1627"}, "freq": 1,
+{ "hdr": "701", "rax": "709", "dbg": false, "cmd": {"22": "1627"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_TF1_PAN", "path": "Engine", "fmt": { "len": 16, "max": 350, "min": -40, "mul": 0.00703125, "add": -40, "unit": "fahrenheit" }, "name": "Transmission Fluid Pan Temperature"}
   ]},
@@ -31,7 +31,7 @@
     {"id": "GRCOROLLA_TT_RR",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear right tire temperature"},
     {"id": "GRCOROLLA_TT_SPARE", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Spare tire temperature"}
   ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": true, "cmd": {"22": "1005"}, "freq": 5,
+{ "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": false, "cmd": {"22": "1005"}, "freq": 5,
   "signals": [
     {"id": "GRCOROLLA_TP_FL",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "GRCOROLLA_TP_FR",    "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
