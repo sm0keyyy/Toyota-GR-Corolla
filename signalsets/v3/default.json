@@ -93,6 +93,10 @@
   "signals": [
     {"id": "GRCOROLLA_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ Battery Voltage"}
   ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "010F"}, "freq": 0.25,
+  "signals": [
+    {"id": "GRCOROLLA_IAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
+  ]},
 { "hdr": "7D0", "dbg": true, "cmd": {"21": "62"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_PARKING_BRAKE", "path": "Control", "name": "Parking Brake", "fmt": {"len": 8, "map": {
