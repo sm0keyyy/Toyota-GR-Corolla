@@ -95,7 +95,7 @@
   ]},
 { "hdr": "7E0", "dbg": true, "cmd": {"01": "0F"}, "freq": 0.25,
   "signals": [
-    {"id": "GRCOROLLA_IAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "fahrenheit" }, "name": "Intake air temperature"}
+    {"id": "GRCOROLLA_IAT", "path": "Engine", "fmt": { "len": 8, "max": 419, "min": -40, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Intake air temperature"}
   ]},
 { "hdr": "7D0", "dbg": true, "cmd": {"21": "62"}, "freq": 1,
   "signals": [
