@@ -93,9 +93,17 @@
   "signals": [
     {"id": "GRCOROLLA_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ Battery Voltage"}
   ]},
-{ "hdr": "7E0", "dbg": false, "cmd": {"01": "0F"}, "freq": 0.25,
+{ "hdr": "7E0", "dbg": false, "cmd": {"01": "0F"}, "freq": 0.5,
   "signals": [
     {"id": "GRCOROLLA_IAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
+  ]},
+{ "hdr": "7E0", "dbg": false, "cmd": {"01": "5C"}, "freq": 0.5,
+  "signals": [
+    {"id": "GRCOROLLA_EOT", "path": "Engine", "fmt": { "len": 8, "max": 210, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "dbg": false, "cmd": {"01": "05"}, "freq": 0.5,
+  "signals": [
+    {"id": "GRCOROLLA_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
   ]},
 { "hdr": "7D0", "dbg": false, "cmd": {"21": "62"}, "freq": 1,
   "signals": [
