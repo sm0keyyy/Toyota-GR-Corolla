@@ -99,11 +99,11 @@
   ]},
 { "hdr": "7E0", "dbg": false, "cmd": {"01": "5C"}, "freq": 0.5,
   "signals": [
-    {"id": "GRCOROLLA_EOT", "path": "Engine", "fmt": { "len": 8, "max": 210, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
+    {"id": "GRCOROLLA_ENG_OIL_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 210, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
 { "hdr": "7E0", "dbg": false, "cmd": {"01": "05"}, "freq": 0.5,
   "signals": [
-    {"id": "GRCOROLLA_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
+    {"id": "GRCOROLLA_ENG_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
   ]},
 { "hdr": "7D0", "dbg": false, "cmd": {"21": "62"}, "freq": 1,
   "signals": [
