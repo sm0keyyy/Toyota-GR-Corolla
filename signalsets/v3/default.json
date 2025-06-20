@@ -9,7 +9,7 @@
   ]},
 { "hdr": "700", "dbg": false, "cmd": {"22": "1638"}, "freq": 1,
   "signals": [
-    {"id": "GRCOROLLA_TCASE_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission Fluid Temperature"}
+    {"id": "GRCOROLLA_TCASE_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transfer Case Estimated Temperature"}
   ]},
 { "hdr": "700", "dbg": false, "cmd": {"22": "1F2F"}, "freq": 30,
   "signals": [
