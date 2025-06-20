@@ -5,7 +5,7 @@
   ]},
 { "hdr": "700", "dbg": false, "cmd": {"22": "1074"}, "freq": 0.25,
   "signals": [
-    {"id": "GRCOROLLA_ENG_OIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 1000, "mul": 10, "div": 128, "unit": "kilopascal" }, "name": "Engine Oil Pressure"}
+    {"id": "GRCOROLLA_ENG_OIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 1000, "mul": 10, "div": 128, "unit": "psi" }, "name": "Engine Oil Pressure"}
   ]},
 { "hdr": "700", "dbg": false, "cmd": {"22": "1638"}, "freq": 1,
   "signals": [
