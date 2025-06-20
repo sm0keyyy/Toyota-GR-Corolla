@@ -85,7 +85,7 @@
   "signals": [
     {"id": "GRCOROLLA_COUPLING_TEMP", "path": "Drivetrain", "fmt": { "len": 16, "max": 100, "min": -20, "div": 128, "unit": "celsius" }, "name": "Coupling Temperature"}
   ]},
-{ "hdr": "7B3", "dbg": false, "cmd": {"22": "1004"}, "freq": 0.25,
+{ "hdr": "7B3", "dbg": false, "cmd": {"22": "1004"}, "freq": 0.5,
   "signals": [
     {"id": "GRCOROLLA_STEERING_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 410, "min": -410, "mul": 1.5, "sign": true, "unit": "degrees" }, "name": "Steering Angle"}
   ]},
