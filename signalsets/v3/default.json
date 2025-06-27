@@ -107,7 +107,7 @@
 { "hdr": "7E0", "dbg": false, "cmd": {"01": "70"}, "freq": 0.5,
   "signals": [
     {"id": "GRCOROLLA_MAP", "path": "Engine",
-     "fmt": { "len": 16, "max": 40, "min": -15, "mul": 145, "add": -14.7, "div": 1000, "unit": "psi" },
+     "fmt": { "len": 16, "max": 40, "min": -15, "mul": 145, "add": -14.7, "div": 10000, "unit": "psi" },
      "name": "Intake manifold pressure"}
   ]},
 { "hdr": "7D0", "dbg": false, "cmd": {"21": "62"}, "freq": 1,
