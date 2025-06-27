@@ -104,7 +104,7 @@
   "signals": [
     {"id": "GRCOROLLA_ENG_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
   ]},
-{ "hdr": "7E0", "dbg": false, "cmd": {"01": "0B"}, "freq": 0.5,
+{ "hdr": "7E0", "dbg": false, "cmd": {"01": "87"}, "freq": 0.5,
   "signals": [
     {"id": "GRCOROLLA_MAP", "path": "Engine",
      "fmt": { "len": 8, "max": 255, "unit": "kPa" },
