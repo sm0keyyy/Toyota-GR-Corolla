@@ -68,10 +68,10 @@
   ]},
 { "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "03"}, "freq": 0.25,
   "signals": [
-    {"id": "GRCOROLLA_TIRE_FR_SPD", "path": "Movement", "fmt": {           "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
-    {"id": "GRCOROLLA_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
-    {"id": "GRCOROLLA_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
-    {"id": "GRCOROLLA_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+    {"id": "GRCOROLLA_TIRE_FR_SPD", "path": "Movement", "fmt": {"bix": 8, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "GRCOROLLA_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 56,  "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "GRCOROLLA_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "GRCOROLLA_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 40, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
 { "hdr": "7B1", "dbg": false, "cmd": {"22": "1026"}, "freq": 1,
   "signals": [
@@ -93,30 +93,9 @@
   "signals": [
     {"id": "GRCOROLLA_ENG_OIL_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 210, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7B0", "dbg": true, "cmd": {"21": "47"}, "freq": 0.25,
-  "signals": [
-    {"id": "GRCOROLLA_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
-    {"id": "GRCOROLLA_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
-    {"id": "GRCOROLLA_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value (degrees/se"},
-    {"id": "GRCOROLLA_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle",       "description": "Positive = counter-clockwise, negative = clockwise."}
-  ]},
 { "hdr": "7E0", "dbg": false, "cmd": {"01": "05"}, "freq": 0.5,
   "signals": [
     {"id": "GRCOROLLA_ENG_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
-  ]},
-{ "hdr": "7E0", "dbg": false, "cmd": {"01": "70"}, "freq": 0.25,
-  "signals": [
-    {"id": "GRCOROLLA_MAP", "path": "Engine",
-     "fmt": { "len": 16, "max": 40, "min": -15, "mul": 145, "add": -11.7, "div": 10000, "unit": "psi" },
-     "name": "Intake manifold pressure"}
-  ]},
-{ "hdr": "7D0", "dbg": false, "cmd": {"21": "62"}, "freq": 1,
-  "signals": [
-    {"id": "GRCOROLLA_PARKING_BRAKE", "path": "Control", "name": "Parking Brake", "fmt": {"len": 8, "map": {
-          "0": { "description": "", "value": "Off" },
-          "2": { "description": "", "value": "On" }
-        }}
-    }
   ]}
 ]
 }
