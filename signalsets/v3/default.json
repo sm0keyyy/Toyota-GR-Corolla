@@ -1,8 +1,4 @@
 { "commands": [
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1059"}, "freq": 0.25,
-  "signals": [
-    {"id": "GRCOROLLA_ACCEL_PEDAL", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 1.42, "add": -41, "unit": "percent" }, "name": "Accelerator Pedal"}
-  ]},
 { "hdr": "700", "dbg": false, "cmd": {"22": "1074"}, "freq": 0.25,
   "signals": [
     {"id": "GRCOROLLA_ENG_OIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 150, "mul": 145, "div": 12800, "unit": "psi" }, "name": "Engine Oil Pressure"}
@@ -15,7 +11,7 @@
   "signals": [
     {"id": "GRCOROLLA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 155, "add": -45, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": false, "cmd": {"22": "1005"}, "freq": 1,
+{ "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": false, "cmd": {"22": "1005"}, "freq": 4,
   "signals": [
     {"id": "GRCOROLLA_TP_FL",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "GRCOROLLA_TP_FR",    "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
@@ -66,15 +62,15 @@
   "signals": [
     {"id": "GRCOROLLA_BATTERY_VOLTAGE", "path": "Electrical", "fmt": { "len": 8, "max": 20, "div": 10, "unit": "volts" }, "name": "B+ Battery Voltage"}
   ]},
-{ "hdr": "7E0", "dbg": false, "cmd": {"01": "0F"}, "freq": 0.5,
+{ "hdr": "7E0", "dbg": false, "cmd": {"01": "0F"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_IAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
   ]},
-{ "hdr": "7E0", "dbg": false, "cmd": {"01": "5C"}, "freq": 0.5,
+{ "hdr": "7E0", "dbg": false, "cmd": {"01": "5C"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_ENG_OIL_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 210, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "dbg": false, "cmd": {"01": "05"}, "freq": 0.5,
+{ "hdr": "7E0", "dbg": false, "cmd": {"01": "05"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_ENG_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "mul": 1, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
   ]}
