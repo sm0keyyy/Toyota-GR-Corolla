@@ -15,15 +15,7 @@
   "signals": [
     {"id": "GRCOROLLA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 155, "add": -45, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": true, "cmd": {"22": "1004"}, "freq": 5,
-  "signals": [
-    {"id": "GRCOROLLA_TT_FL",    "path": "Tires", "fmt": {"bix": 8,   "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Front left tire temperature"},
-    {"id": "GRCOROLLA_TT_FR",    "path": "Tires", "fmt": {"bix": 56,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Front right tire temperature"},
-    {"id": "GRCOROLLA_TT_RL",    "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear left tire temperature"},
-    {"id": "GRCOROLLA_TT_RR",    "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear right tire temperature"},
-    {"id": "GRCOROLLA_TT_SPARE", "path": "Tires", "fmt": {"bix": 72, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Spare tire temperature"}
-  ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": false, "cmd": {"22": "1005"}, "freq": 5,
+{ "hdr": "750", "eax": "2A", "tst": "2A", "tmo": "96", "fcm1": true, "dbg": false, "cmd": {"22": "1005"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_TP_FL",    "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "GRCOROLLA_TP_FR",    "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 4, "div": 58, "add": -0.5, "unit": "bars" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
@@ -66,20 +58,9 @@
   "signals": [
     {"id": "GRCOROLLA_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master Cylinder Sensor Temperature"}
   ]},
-{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "03"}, "freq": 0.25,
-  "signals": [
-    {"id": "GRCOROLLA_TIRE_FR_SPD", "path": "Movement", "fmt": {"bix": 8, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
-    {"id": "GRCOROLLA_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 56,  "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
-    {"id": "GRCOROLLA_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
-    {"id": "GRCOROLLA_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 40, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
-  ]},
 { "hdr": "7B1", "dbg": false, "cmd": {"22": "1026"}, "freq": 1,
   "signals": [
     {"id": "GRCOROLLA_COUPLING_TEMP", "path": "Drivetrain", "fmt": { "len": 16, "max": 100, "min": -20, "div": 128, "unit": "celsius" }, "name": "Coupling Temperature"}
-  ]},
-{ "hdr": "7B3", "dbg": true, "cmd": {"22": "1004"}, "freq": 0.5,
-  "signals": [
-    {"id": "GRCOROLLA_STEERING_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 410, "min": -410, "mul": 1.5, "sign": true, "unit": "degrees" }, "name": "Steering Angle"}
   ]},
 { "hdr": "7C0", "dbg": false, "cmd": {"22": "1021"}, "freq": 1,
   "signals": [
